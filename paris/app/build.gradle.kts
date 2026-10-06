@@ -67,6 +67,8 @@ dependencies {
     debugImplementation(libs.compose.ui.tooling)
     implementation(libs.glance.appwidget)
     implementation(libs.glance.material3)
+    // Used directly to clear stuck Glance session jobs (see GlanceSessionReset.kt).
+    implementation(libs.androidx.work.runtime)
     implementation(libs.datastore.preferences)
     implementation(libs.ktor.client.core)
     implementation(libs.ktor.client.okhttp)

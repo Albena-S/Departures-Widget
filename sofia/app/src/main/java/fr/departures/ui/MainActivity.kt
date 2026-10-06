@@ -13,6 +13,8 @@ import fr.departures.data.ThemePref
 import fr.departures.locator
 import fr.departures.refresh.RefreshScheduler
 import fr.departures.ui.theme.DeparturesTheme
+import fr.departures.widget.resetGlanceSessions
+import kotlinx.coroutines.launch
 
 class MainActivity : ComponentActivity() {
 
@@ -20,6 +22,9 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         RefreshScheduler.ensureScheduled(this)
+        // Opening the app also unfreezes any widget whose Glance session got stuck.
+        val app = applicationContext
+        app.locator.scope.launch { resetGlanceSessions(app, "app opened") }
         val openSettings = intent.getStringExtra(EXTRA_OPEN) == OPEN_SETTINGS
         setContent {
             val settings by locator.settings.settings.collectAsStateWithLifecycle(initialValue = null)
