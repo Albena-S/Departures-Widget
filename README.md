@@ -9,18 +9,13 @@ the Play Store) and can be installed side by side.
 | [`paris/`](paris) | **Departures Paris** | Île-de-France: metro, RER, Transilien, tram, bus | IDFM PRIM real-time API (official) | Yes, free PRIM key |
 | [`sofia/`](sofia) | **Departures Sofia** | Sofia: bus, trolleybus, tram, metro | sofiatraffic.bg stop boards (unofficial) + official GTFS stop list | No |
 
-```
-┌──────────────────────────────────────┐   ┌──────────────────────────────────────┐
-│ Paris nord                           │   │ Борово                               │
-│ CERNAY                               │   │ БЛ. 214 Ж.К. БОРОВО                  │
-│ [H]  0 [2]                 28  16:28 │   │ [204]  4 min               15     25 │
-│ ──────────────────────────────────── │   │ [ 2 ]  4 min               18     28 │
-│ ERMONT HALTE                         │   │ ──────────────────────────────────── │
-│ [H] 12 min [2]             42     54 │   │ Ж.К. БОРОВО                          │
-│ Updated just now                  ⟳  │   │ [ 9 ]  0                    7     15 │
-└──────────────────────────────────────┘   │ Updated 31 s ago                  ⟳  │
-                                           └──────────────────────────────────────┘
-```
+<p align="center">
+  <img src="images/home-widgets.jpg" alt="Home screen with the Departures Paris and Departures Sofia icons, a Paris widget (Cernay and Ermont Halte, line H) and a Sofia widget (Borovo: bus 204, trolleybuses 2 and 9, trams 7 and 27)" width="360">
+</p>
+
+*Both apps on one phone. Top: **Departures Paris**. Line H at Cernay is at the platform (pulsing
+`0`, platform `[2]`); later trains in 28 min and at 16:28. Bottom: **Departures Sofia**, with three
+stops in one group, each line in its own colour.*
 
 ## Download
 
@@ -49,6 +44,21 @@ On GitHub, open the file and click **Download raw file** (⤓).
   installs over the old one and keeps your groups and widgets.
 - **These are debug builds** for personal use. To make fresh ones, see
   [Updating the APKs](#updating-the-apks).
+
+## Screenshots
+
+<table>
+  <tr>
+    <td align="center" width="50%"><img src="images/edit-group.jpg" alt="Edit group screen: title Paris, entries Cernay H, Ermont Halte H, Cernay RER C, with reorder and remove buttons" width="300"></td>
+    <td align="center" width="50%"><img src="images/settings.jpg" alt="Settings screen: theme, refresh interval, API key field with Test API key button, permissions with their status" width="300"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Edit a group.</b> Each entry is a stop, a line and its directions
+      ("To Paris Gare du Nord"). Reorder with the arrows; the widget follows the same order.</td>
+    <td align="center"><b>Settings.</b> Theme, refresh interval, your own API key (Paris) with a
+      test button, and the status of the three permissions the refresh loop needs.</td>
+  </tr>
+</table>
 
 ## What they have in common
 
