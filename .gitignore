@@ -1,0 +1,24 @@
+# Secrets and machine-specific
+local.properties
+
+# Build output
+build/
+.gradle/
+.kotlin/
+captures/
+*.apk
+*.aab
+# ...except the two ready-to-install builds at the root (no API key inside)
+!/Departures-Paris.apk
+!/Departures-Sofia.apk
+
+# IDE
+.idea/
+*.iml
+.DS_Store
+
+# Phone screenshots and scratch
+viber_image_*
+screenshots/
+shot*.png
+.superpowers/
