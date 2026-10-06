@@ -1,3 +1,5 @@
+Honestly, I just wanted to look at my phone in the morning and know which bus to run for.
+
 # Departures
 
 Two small Android apps that put **live public-transport departures on your home screen**, one
