@@ -1,0 +1,12 @@
+local.properties
+build/
+.gradle/
+.idea/
+.kotlin/
+*.iml
+/shot*.png
+.superpowers/
+captures/
+*.apk
+viber_image_*
+/screenshots/

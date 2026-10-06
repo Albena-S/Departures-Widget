@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- "Departures …" first so the Sofia and Paris apps sit together in the app drawer. -->
+    <string name="app_name">Departures Sofia</string>
+    <string name="app_title">Departures · Sofia</string>
+    <string name="widget_label">Departures · Sofia</string>
+    <string name="widget_description">Live departures for your Sofia groups</string>
+</resources>
